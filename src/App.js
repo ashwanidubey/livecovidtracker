@@ -10,7 +10,7 @@ function App() {
     <>
     
       <input  defaultValue={val} onChange={(e)=>{localStorage.setItem("myval",e.target.value);changeval(localStorage.getItem("myval"))}}></input>
-      
+      <Covid />
     </>
   );
 }
