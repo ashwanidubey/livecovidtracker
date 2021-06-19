@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import { useState,useEffect } from 'react';
 import './App.css';
+import { Covid } from './Covid';
 
 function App() {
+  const[val,changeval]=useState("hi")
+  const[count,changecount]=useState(0)
+  useEffect(() => {
+    changeval(localStorage.getItem("myval"))
+  }, [count])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>{val}</h1>
+      <input onChange={(e)=>{console.log("hello");localStorage.setItem("myval",e.target.value);changecount(count+1)}}></input>
+      <Covid /> 
+    </>
   );
 }
 

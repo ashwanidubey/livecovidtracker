@@ -1,0 +1,59 @@
+h1
+{
+    color: red;
+}
+#header
+{
+    text-align: center;
+}
+.mytable
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#myform
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+
+.mytd,.myth{
+    border-style: solid;
+
+}
+#mycontainer
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:auto
+}
+#card
+{
+    padding: 2px;
+    background-color: aqua;
+    border-radius: 10%;
+    width:fit-content;
+    width: 300px;
+    height: 400px;
+    color: white;
+    box-shadow:30px;
+}
+#heading
+    {
+       color: white;
+    }
+#myselect
+    {
+        height: 40px;
+        font-size: large;
+        text-align: center;
+    }    
