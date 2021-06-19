@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/.github.io/livecovidtracker/static/css/main.3337e251.chunk.css",
-    "main.js": "/.github.io/livecovidtracker/static/js/main.b6923e8b.chunk.js",
-    "main.js.map": "/.github.io/livecovidtracker/static/js/main.b6923e8b.chunk.js.map",
+    "main.js": "/.github.io/livecovidtracker/static/js/main.c3051d66.chunk.js",
+    "main.js.map": "/.github.io/livecovidtracker/static/js/main.c3051d66.chunk.js.map",
     "runtime-main.js": "/.github.io/livecovidtracker/static/js/runtime-main.1a6167c6.js",
     "runtime-main.js.map": "/.github.io/livecovidtracker/static/js/runtime-main.1a6167c6.js.map",
     "static/js/2.6c168fc5.chunk.js": "/.github.io/livecovidtracker/static/js/2.6c168fc5.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1a6167c6.js",
     "static/js/2.6c168fc5.chunk.js",
     "static/css/main.3337e251.chunk.css",
-    "static/js/main.b6923e8b.chunk.js"
+    "static/js/main.c3051d66.chunk.js"
   ]
 }
