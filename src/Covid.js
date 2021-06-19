@@ -37,7 +37,7 @@ export const Covid = () => {
             <Myform states={allstates} setselectedstates={setselectedstates}/>
             <div id="mycontainer">
             <div id="mycountry">
-            <Showsingle state={"INDIA"} confirmed={mydata[0].confirmed} active={mydata[0].active} recovered={mydata[0].recovered} deaths={mydata[0].deaths}/>
+            {mydata.length && <Showsingle state={"INDIA"} confirmed={mydata[0].confirmed} active={mydata[0].active} recovered={mydata[0].recovered} deaths={mydata[0].deaths}/>}
             </div>
             <div id="mystate">
             {selectedstates!=""?
