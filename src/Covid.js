@@ -8,9 +8,19 @@ export const Covid = () => {
     const [selectedstates, setselectedstates] = useState("")
     
     const getCovidData=async()=>{
+        console.log("getcovid called")
         let res=await fetch('https://api.covid19india.org/data.json').then((res)=>res.json()).then((actualdata)=>actualdata.statewise)
        
        setmydata(res)
+       let all=res.map((data)=>data.state)
+        all=all.filter((st)=>{
+         if(st==="State Unassigned" || st==="Total")
+           return false
+         return true  
+          })
+        console.log("grat"+res) 
+        setallstates(all)
+        //setselectedstates("Uttar Pradesh")
         
     }
     
@@ -18,16 +28,10 @@ export const Covid = () => {
         console.log("state",selectedstates)
         getCovidData();   
         console.log(mydata[0])
-        let all=mydata.map((data)=>data.state)
-        all=all.filter((st)=>{
-         if(st==="State Unassigned" || st==="Total")
-           return false
-         return true  
-          })
-        //console.log(allstates) 
-        setallstates(all)
+
         
-    }, [])
+        
+    }, [selectedstates])
     return (
         <>
             <div id="header">
